@@ -318,8 +318,16 @@ function handleAnswerRequest(intent, session, callback) {
         // if currentQuestionIndex is 4, we've reached 5 questions (zero-indexed) and can exit the game session
         if (currentQuestionIndex == GAME_LENGTH - 1) {
             speechOutput = userGaveUp ? "" : "That answer is ";
-            speechOutput += speechOutputAnalysis + "You got " + currentScore.toString() + " out of "
-                + GAME_LENGTH.toString() + " questions correct. Good job Haasni. You are the best girl ever!";
+            if(currentScore < GAME_LENGTH - 2)
+            {
+            	speechOutput += speechOutputAnalysis + "You got " + currentScore.toString() + " out of "
+                	+ GAME_LENGTH.toString() + " questions correct. Haasni- you can do better than that. Let's be a good girl now!";	
+            }
+            else
+            {
+            	speechOutput += speechOutputAnalysis + "You got " + currentScore.toString() + " out of "
+                	+ GAME_LENGTH.toString() + " questions correct. Good job Haasni. You are the best girl ever!";
+            }
             callback(session.attributes,
                 buildSpeechletResponse(CARD_TITLE, speechOutput, "", true));
         } else {
