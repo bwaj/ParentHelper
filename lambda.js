@@ -23,49 +23,37 @@ var questions = [
     {
         "Did Haasni go to sleep at 8:30?": [
             "Yes",
-            "No",
-            "She went to sleep late"
+            "No"
         ]
     },
 	{
         "Did Haasni have her breakfast today?": [
             "Yes",
-            "No",
-            "Still Eating",
-			"Crying"
+            "No"
         ]
     },
     {
         "Did Haasni have her lunch today?": [
             "Yes",
-            "No",
-            "Still Eating",
-			"Crying"
+            "No"
         ]
     },
     {
         "Did Haasni have her dinner today?": [
             "Yes",
-            "No",
-            "Still Eating",
-			"Crying"
+            "No"
         ]
     },
     {
         "Did Haasni have her breakfast today?": [
             "Yes",
-            "No",
-            "Still Eating",
-            "Very slow",
-			"Crying"
+            "No""
         ]
     },
     {
         "Did Haasni listen to her parents today?": [
             "Yes",
-            "No",
-            "Cried a lot today",
-            "Was the best girl ever today"
+            "No"
         ]
     }
 ];
