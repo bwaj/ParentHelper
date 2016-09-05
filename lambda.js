@@ -47,7 +47,7 @@ var questions = [
     {
         "Did Haasni have her breakfast today?": [
             "Yes",
-            "No""
+            "No"
         ]
     },
     {
